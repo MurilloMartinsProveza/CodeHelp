@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contrate um Programador</title>
+    <link rel="stylesheet" href="style-contrate.css">
+</head>
+<body>
+
+    <header>
+        <h1>Contrate um Programador</h1>
+        <p>Encontre programadores talentosos para realizar seus projetos.</p>
+    </header>
+
+    <section>
+        <div class="anuncio-form">
+            <h2>Publique seu Projeto</h2>
+            <form action="processar_anuncio.php" method="post">
+                <label for="titulo">Título do Projeto:</label>
+                <input type="text" id="titulo" name="titulo" required>
+
+                <label for="descricao">Descrição do Projeto:</label>
+                <textarea id="descricao" name="descricao" rows="4" required></textarea>
+
+                <label for="contato">Informações de Contato:</label>
+                <textarea id="contato" name="contato" rows="2" required></textarea>
+
+                <button href="index.html" type="submit">Publicar Anúncio</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Contrate um Programador. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
