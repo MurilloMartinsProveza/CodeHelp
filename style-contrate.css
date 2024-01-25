@@ -30,7 +30,7 @@ section {
 }
 
 .anuncio-form {
-    width: 400px;
+    min-width: 400px;
     max-height: 800px;
     backdrop-filter: blur(100px);   
     background-color: #fffdfd91;
