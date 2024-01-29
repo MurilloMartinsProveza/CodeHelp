@@ -16,6 +16,7 @@ document.addEventListener('DOMContentLoaded', function () {
             // Acessa as propriedades específicas do objeto (por exemplo, 'titulo' e 'descricao')
             const titulo = anuncio.titulo;
             const descricao = anuncio.descricao;
+            const contato = anuncio.contato;
 
           
             var anuncioDetails = document.getElementById("anuncio-details");
@@ -27,6 +28,10 @@ document.addEventListener('DOMContentLoaded', function () {
                 
                                     <h1>Descrição:</h1> 
                                      <h4>${descricao}</h4>
+
+                                     <h1>Contato:</h1> 
+                                     <h4>${contato}</h4>
+
                                      <div class="voltar">
                                          <a href="index.html">Voltar</a>
                                      </div>`;
