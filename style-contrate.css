@@ -59,6 +59,7 @@ input, textarea {
 }
 
 button {
+    margin-top: 5%;
     padding: 10px;
     background-color: #333;
     color: #fff;
@@ -84,3 +85,50 @@ footer {
     backdrop-filter: blur(100px);
     box-shadow: 0 0 3px rgba(255, 255, 255, 0.5);
 }
+
+.alerta {
+
+display: none;
+text-align: center;
+background-color: rgb(9, 255, 0);
+border-radius: 5px;
+margin-bottom: 6%;
+font-weight: 550;
+padding: 20px;
+animation: entradaSaida 0.3s ease-in-out; 
+}
+
+
+a {
+    display: block;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    background-color: #33333300;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    color: rgb(0,20,121);
+}
+
+@keyframes entradaSaida {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.material-symbols-outlined {
+
+position: relative;
+top: 5px;
+padding-right: 10px;
+color: rgb(0,20,121);
+
+
+}
+
