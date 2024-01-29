@@ -5,6 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contrate um Programador</title>
     <link rel="stylesheet" href="style.css">
+    <script>
+        // Verifica se o usuário está autenticado (lógica de exemplo)
+        const usuarioAutenticado = false; // Substitua pela sua lógica de autenticação
+
+        // Redireciona para a página de login se o usuário não estiver autenticado
+        if (!usuarioAutenticado) {
+            window.location.href = "/Login/login.html";
+        }
+    </script>
 </head>
 <body>
 
@@ -12,60 +21,23 @@
         <h1>Contrate um Programador</h1>
         <p>Encontre programadores talentosos para realizar seus projetos.</p>
     </header>
-<center>
-       <section>
+
+    <section>
         <h2>Projetos Disponíveis</h2>
-        <div class="anuncios-lista">
-            <!-- Aqui serão listados os anúncios disponíveis -->
-            <!-- Cada anúncio pode ser um link para sua própria página de detalhes -->
-            <div class="anuncio">
-                <h3>Título do Projeto 1</h3>
-                <p>Descrição curta do Projeto 1.</p>
-                <p>Informações de Contato: email@example.com</p>
-                <a href="detalhes.html">Ver Detalhes</a>
-            </div>
-
-            <div class="anuncio">
-                <h3>Título do Projeto 2</h3>
-                <p>Descrição curta do Projeto 2.</p>
-                <p>Informações de Contato: telefone123.comasd</p>
-                <a href="detalhes.html">Ver Detalhes</a>
-            </div>
-            <div class="anuncio">
-                <h3>Título do Projeto 1</h3>
-                <p>Descrição curta do Projeto 1.</p>
-                <p>Informações de Contato: email@example.com</p>
-                <a href="detalhes.html">Ver Detalhes</a>
-            </div>
-
-            <div class="anuncio">
-                <h3>Título do Projeto 2</h3>
-                <p>Descrição curta do Projeto 2.</p>
-                <p>Informações de Contato: telefone123.comasd</p>
-                <a href="detalhes.html">Ver Detalhes</a>
-            </div>
-            <div class="anuncio">
-                <h3>Título do Projeto 1</h3>
-                <p>Descrição curta do Projeto 1.</p>
-                <p>Informações de Contato: email@example.com</p>
-                <a href="detalhes.html">Ver Detalhes</a>
-            </div>
-
-            <div class="anuncio">
-                <h3>Título do Projeto 2</h3>
-                <p>Descrição curta do Projeto 2.</p>
-                <p>Informações de Contato: telefone123.comasd</p>
-                <a href="detalhes.html">Ver Detalhes</a>
-            </div>
-            <!-- Adicione mais anúncios conforme necessário -->
+        <div id="div_lista" class="anuncios-lista">
+            <!-- Aqui serão listados dinamicamente os projetos -->
         </div>
     </section>
-</center>
- 
 
     <footer>
         <p>&copy; 2024 CodeHelp. Todos os direitos reservados.</p>
     </footer>
 
+    <!-- Importa apenas o módulo de banco de dados -->
+    <!-- Sua configuração do Firebase aqui -->
+    <!-- Seu código JavaScript aqui -->
+    <script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-database.js"></script>
+    <script src="firebase.js"></script>
 </body>
 </html>

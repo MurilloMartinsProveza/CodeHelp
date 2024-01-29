@@ -1,4 +1,5 @@
 body {
+ 
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
@@ -30,26 +31,32 @@ section {
 }
 
 #anuncio-details {
-  position: relative;
-  top: 50px;
+    position: relative;
+    top: 50px;
     text-align: center;
     font-size: 110%;
     color: black;
-  backdrop-filter: blur(100px);   
-  background-color: #fffdfd6c;
+    backdrop-filter: blur(100px);   
+    background-color: #fffdfd6c;
     padding: 15px;
-    margin: 10px;
-    margin-bottom: 15%;
+    margin: 10px auto; /* Define margens laterais automáticas para centralizar horizontalmente */
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     max-width: 600px;
     max-height: 1100px;
+
+    /* Adiciona propriedades flexíveis para centralizar conteúdo verticalmente */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #anuncio-details img {
     max-width: 100%;
     height: 200px;
     margin-bottom: 20px;
+    border-radius: 10px;
 }
 
 #anuncio-details p {
@@ -85,4 +92,18 @@ max-width: 300px;
 justify-content: center;
 text-align: center;
 
+}
+
+.detalhes {
+    margin-top: 5%;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
 }

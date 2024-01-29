@@ -1,0 +1,131 @@
+.todo {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 85vh; /* Adicionado para centralizar verticalmente na tela inteira */
+    font-family: Arial, Helvetica, sans-serif   ;
+}
+
+.form {
+    color: white;
+    display: flex;
+    flex-direction: column; /* Adicionado para empilhar os elementos verticalmente */
+    align-items: center;
+    justify-content: center;
+    position: relative;
+   
+    height: 550px;
+    width: 450px;
+
+Backdrop-filter: blur(30px);
+    border-radius: 20px;
+    background: rgb(45,44,44);
+background: -moz-linear-gradient(0deg, rgba(45,44,44,1) 0%, rgba(0,0,0,0.28895308123249297) 100%);
+background: -webkit-linear-gradient(0deg, rgba(45,44,44,1) 0%, rgba(0,0,0,0.28895308123249297) 100%);
+background: linear-gradient(0deg, rgba(45,44,44,1) 0%, rgba(0,0,0,0.28895308123249297) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2d2c2c",endColorstr="#000000",GradientType=1);
+}
+
+.inputs {
+
+    width: 450px;
+    height: 300px;
+
+}
+
+
+.title {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 300%;
+   color: rgba(255, 255, 255, 0.8);;
+position: relative;
+bottom: 60px;
+
+}
+
+
+body {
+background-repeat: no-repeat;
+background-image: url("https://th.bing.com/th/id/R.30f521ed242cf0fa78c75225de726623?rik=joVdubp3opqgWw&pid=ImgRaw&r=0");
+
+}
+
+/* Adicione essas regras ao seu arquivo CSS */
+
+.email {
+    color: black;
+    background-color: rgba(255, 255, 255, 0.1); /* Cor de fundo transparente */
+    border: 1px solid rgba(255, 255, 255, 0.5); /* Borda com transparência */
+    border-radius: 8px; /* Cantos arredondados */
+    padding: 10px; /* Espaçamento interno */
+    width: 80%; /* Largura do campo de texto */
+    outline: none; /* Remova a borda ao focar */
+    transition: all 0.3s ease-in-out; /* Adiciona uma transição suave */
+}
+
+.email:focus {
+    background-color: rgba(255, 255, 255, 0.2); /* Altera a cor de fundo ao focar */
+    border: 1px solid rgba(255, 255, 255, 0.8); /* Altera a cor da borda ao focar */
+}
+
+
+
+/* Restante do seu código permanece o mesmo */
+
+/* Adicione essas regras ao seu arquivo CSS */
+
+.senha {
+    color: black;
+    background-color: rgba(255, 255, 255, 0.1); /* Cor de fundo transparente */
+    border: 1px solid rgba(255, 255, 255, 0.5); /* Borda com transparência */
+    border-radius: 8px; /* Cantos arredondados */
+    padding: 10px; /* Espaçamento interno */
+    width: 80%; /* Largura do campo de texto */
+    outline: none; /* Remova a borda ao focar */
+    transition: all 0.3s ease-in-out; /* Adiciona uma transição suave */
+}
+
+.senha:focus {
+    background-color: rgba(255, 255, 255, 0.2); /* Altera a cor de fundo ao focar */
+    border: 1px solid rgba(255, 255, 255, 0.8); /* Altera a cor da borda ao focar */
+}
+
+/* Restante do seu código permanece o mesmo */
+
+.texto {
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 150%;
+   color: rgba(255, 255, 255, 0.8);;
+
+    
+}
+
+/* Adicione essas regras ao seu arquivo CSS */
+
+.login {
+    color: rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.8); /* Cor de fundo do botão */
+    border: none; /* Remove a borda */
+    border-radius: 8px; /* Cantos arredondados */
+    padding: 12px 24px; /* Espaçamento interno */
+    font-size: 16px; /* Tamanho da fonte */
+    font-weight: bold; /* Negrito */
+    cursor: pointer; /* Altera o cursor ao passar por cima */
+    outline: none; /* Remove a borda ao focar */
+    transition: background-color 0.3s ease-in-out; /* Adiciona uma transição suave apenas para a cor de fundo */
+}
+
+.login:hover {
+    background-color: rgba(0, 100, 200, 1); /* Altera a cor de fundo ao passar por cima */
+}
+
+.login:active {
+    transform: translateY(2px); /* Adiciona uma pequena elevação ao clicar */
+}
+
+/* Restante do seu código permanece o mesmo */
