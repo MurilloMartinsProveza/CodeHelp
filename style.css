@@ -24,28 +24,32 @@ section {
     align-items: center;
     padding: 20px;
     color: white;
-    max-width: 1200px;
+    max-width: 100%;
     margin-bottom: 10%;
+    
 }
 
 .anuncios-lista {
+
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 
+
 }
 
 .anuncio {
+
     font-size: 110%;
     color: black;
   backdrop-filter: blur(100px);   
   background-color: #fffdfd91;
     padding: 15px;
-    margin: 10px;
+    margin: 30px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     max-width: 300px;
-    max-height: 300px;
+    
 }
 
 a {
@@ -77,4 +81,35 @@ footer {
     max-height: 6%;
     backdrop-filter: blur(100px);
     box-shadow: 0 0 3px rgba(255, 255, 255, 0.5);
+}
+
+table {
+width: 30%;
+margin: auto;
+}
+td, th {
+border: 2px solid blue; 
+text-align: center;
+background-color: aqua;
+font-size: 30px;
+border-radius: 10px;
+}
+
+.detalhes {
+    font-size: 80%;
+    margin-top: 10%;
+    padding: 15px 20px;
+    color: #fff;
+    background-color: rgba(54, 54, 54, 0.5); /* Cor de fundo do botão */
+    border: 2px solid #fffdfd46; /* Cor da borda do botão */
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Adiciona uma transição suave nas mudanças de cor */
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+}
+
+.detalhes:hover {
+    
+    background-color: hwb(0 100% 0%); /* Cor de fundo do botão ao passar o mouse */
+    color: #030303;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
 }
