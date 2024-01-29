@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contrate um Programador</title>
     <link rel="stylesheet" href="style-contrate.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
 
@@ -16,17 +17,19 @@
     <section>
         <div class="anuncio-form">
             <h2>Publique seu Projeto</h2>
-            <form action="processar_anuncio.php" method="post">
+            <form action="" id="CodeHelp" method="post">
+                <div class="alerta">Seu projeto foi enviado!</div>
                 <label for="titulo">Título do Projeto:</label>
-                <input type="text" id="titulo" name="titulo" required>
+                <input type="text" id="titulo" name="titulo" required placeholder="Titulo">
 
                 <label for="descricao">Descrição do Projeto:</label>
-                <textarea id="descricao" name="descricao" rows="4" required></textarea>
+                <textarea id="descricao" name="descricao" rows="4" required placeholder="Descrição"></textarea>
 
                 <label for="contato">Informações de Contato:</label>
-                <textarea id="contato" name="contato" rows="2" required></textarea>
+                <textarea id="contato" name="contato" rows="2" required placeholder="contato"></textarea>
 
-                <button href="index.html" type="submit">Publicar Anúncio</button>
+                <button type="submit">Publicar Projeto</button>
+                <a href="index.html"> <span class="material-symbols-outlined">home</span>Página inicial</a>
             </form>
         </div>
     </section>
@@ -35,5 +38,7 @@
         <p>&copy; 2024 CodeHelp. Todos os direitos reservados.</p>
     </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src="./projeto.js"></script>
 </body>
 </html>
